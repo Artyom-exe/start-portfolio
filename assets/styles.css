@@ -1,0 +1,132 @@
+/* -----import font------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+/* ------header------- */
+
+h1, h2, a {
+    font-family: "love ya like a sister";
+}
+
+header {
+    display: flex;
+    position: relative;
+    background-image: url('/images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 350px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    min-width: 40%;
+}
+nav ul {
+    display: flex;
+    background-color:rgba(110, 110, 110, 0.7);
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+nav ul li {
+    list-style-type: none;
+    padding: 10px 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+}
+header h1 {
+    position: absolute;
+    top: 180px;
+    left: 70px;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+/* -------fin header -------- */
+
+/* ------toutes les sections----- */
+section {
+    padding: 20px;
+}
+
+/* ------ h2 et h3 a chaque début d'article----- */
+section article>h2 {
+    color: black;
+    font-size: 2.5em;
+}
+section article h2+h3 {
+    color: grey;
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* ------Tous les articles------ */
+article {
+    margin: 30px;
+}
+
+/* ------les images------- */
+
+
+section article ul.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+
+section article ul.gallery li {
+    min-width: 10em;
+    flex-basis: 20em;
+    flex-grow: 1;
+    margin: 20px;
+}
+
+section article ul.gallery li {
+    list-style-type: none;
+}
+
+/* ------fin images------ */
+
+/* -------section nos service -------- */
+
+section article div.column {
+    column-count: 3;
+    column-gap: 20px;
+    text-align: justify;
+}
+
+/* -------fin section nos service -------- */
+
+/* -------footer------- */
+
+footer h4 {
+    font-size: 0.9em;
+}
+
+footer {
+    height: 200px;
+    background-color: rgb(31, 31, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* ------- fin footer------- */
+
+
+
